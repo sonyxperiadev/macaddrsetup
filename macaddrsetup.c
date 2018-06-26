@@ -1,5 +1,4 @@
 #include <errno.h>
-#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <dlfcn.h>
@@ -8,7 +7,6 @@
 #include <net/if_arp.h>
 #include <net/if.h>
 #include <sys/stat.h>
-#include <sys/types.h>
 
 #define LOG_TAG "macaddrsetup"
 #include <cutils/log.h>
