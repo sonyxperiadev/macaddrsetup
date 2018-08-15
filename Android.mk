@@ -20,7 +20,7 @@ LOCAL_SHARED_LIBRARIES := \
     libcutils
 
 LOCAL_MODULE := macaddrsetup
-ifeq (1,$(filter 1,$(shell echo "$$(( $(PLATFORM_SDK_VERSION) >= 25 ))" )))
+ifneq ($(call math_gt_or_eq, $(PLATFORM_SDK_VERSION), 25),)
 LOCAL_MODULE_OWNER := sony
 LOCAL_INIT_RC_64   := vendor/etc/init/macaddrsetup.rc
 LOCAL_PROPRIETARY_MODULE := true
