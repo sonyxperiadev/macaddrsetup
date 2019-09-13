@@ -9,7 +9,7 @@
 #include <sys/stat.h>
 
 #define LOG_TAG "macaddrsetup"
-#include <cutils/log.h>
+#include <log/log.h>
 
 #define LIB_TA "libta.so"
 
